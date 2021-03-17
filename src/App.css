@@ -1,0 +1,221 @@
+/* style rules for navigation */
+.logo {
+  display: flex;
+  align-items: center;
+  width: 175px;
+  height: auto;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #1f333b;
+  font-size: 1.5rem;
+}
+
+#navbar {
+  height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #effaff;
+  box-shadow: none;
+  transition: box-shadow 0.5s;
+}
+
+#navbar .navbar-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar .navbar-inner .hamburger {
+  display: none;
+}
+
+#navbar .navbar-inner .links {
+  display: flex;
+  align-items: center;
+}
+
+#navbar .navbar-inner .links li {
+  padding: 1.5rem 1.5rem;
+  list-style: none;
+}
+
+#navbar .navbar-inner .links li:last-child {
+  padding: 0.75rem 1.5rem;
+}
+
+#navbar .navbar-inner .links li a {
+  font-weight: 800;
+  text-decoration: none;
+  color: #1f333b;
+  text-transform: uppercase;
+}
+
+/* style rules for banner section */
+#hero {
+  position: relative;
+  background: #24527e;
+  color: #effaff;
+  height: 88vh;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+#hero .hero-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: inherit;
+  align-items: center;
+}
+
+#hero .hero-inner .car img {
+  width: 100%;
+}
+
+.btn-apply-dark {
+  border: 2px solid black;
+  padding: 10px 20px;
+}
+
+.btn-apply-light {
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* style rules for about section */
+#about {
+  z-index: -1;
+  background: #f3eff5;
+  color: #1f333b;
+  height: auto;
+  margin-top: 2rem;
+}
+#about .about-inner .about-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+#about .about-inner .about-grid .about-left {
+  padding-right: 2rem;
+}
+
+#about img {
+  width: 100%;
+}
+
+/* style rules for inventory section */
+
+#inventory {
+  background: #f3eff5;
+  color: #1f333b;
+  height: auto;
+  padding-bottom: 8rem;
+}
+
+/* #inventory .inventory-inner .col-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+} */
+
+#inventory .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#inventory .inventory-inner .box {
+  color: #1f333b;
+  background: #effaff;
+  box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 10px;
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+#inventory .inventory-inner .box:hover {
+  transform: scale(1.03);
+}
+
+#inventory .inventory-inner .box .vehicle {
+  background: #24527e;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+}
+
+#inventory .inventory-inner .box .vehicle img {
+  max-width: 100px;
+  height: auto;
+}
+
+#inventory .inventory-inner .box .description {
+  display: grid;
+  grid-template-rows: fit-content(4rem) 11rem 1fr;
+  row-gap: 1rem;
+  justify-items: center;
+  padding: 1.5rem 1rem;
+}
+
+#inventory a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* style rules for contact section */
+
+#contact {
+  background: #24527e;
+  color: #effaff;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 20%);
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact .contact-inner {
+  padding-top: 150px;
+}
+
+/* #contact .contact-inner .col-12 .col-left form .contact-email .email-input,
+#contact .contact-inner .col-12 .col-left form .contact-name .name-input,
+#contact .contact-inner .col-12 .col-left form .contact-text .message-input {
+  border-radius: 3px;
+  box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1rem;
+  font-size: inherit;
+  font-family: inherit;
+  width: 100%;
+  transition: 0.5s;
+  outline: none;
+} */
+
+#contact .contact-inner .col-12 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+#contact .contact-inner .col-12 .col-left form .contact-email {
+  grid-area: email;
+}
+
+footer {
+  height: auto;
+  background: #effaff;
+}
+footer .footer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
